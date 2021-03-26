@@ -1,0 +1,31 @@
+#ifndef CONSTANTS_h
+#define CONSTANTS_h
+
+#define TRUE 1
+
+#define MIN_COMMAND_NUMBER 0
+#define MAX_COMMAND_NUMBER 3
+#define MAX_MATRIX_SIZE 1000
+
+#define MIN_BORDER -5
+#define MAX_BORDER 5
+
+#define HZ 2300000000
+#define NUMBER_OF_RUNS 3000
+
+#define NUMBER_ROWS_1 10
+#define NUMBER_COLUMNS_1 10
+
+#define NUMBER_ROWS_2 50
+#define NUMBER_COLUMNS_2 50
+
+#define NUMBER_ROWS_3 100
+#define NUMBER_COLUMNS_3 100
+
+#define FILL_PERCENTAGE_1 10
+#define FILL_PERCENTAGE_2 25
+#define FILL_PERCENTAGE_3 50
+#define FILL_PERCENTAGE_4 75
+#define FILL_PERCENTAGE_5 100
+
+#endif

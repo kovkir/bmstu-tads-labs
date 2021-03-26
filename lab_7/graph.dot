@@ -1,0 +1,29 @@
+digraph g{
+    node[style="filled", fillcolor="lightpink", color="red",fontsize=14];
+    edge[color="red",fontsize=14];
+
+    "5" [style="filled", fillcolor="lightgreen", color="darkgreen"];
+    "9" [style="filled", fillcolor="lightgreen", color="darkgreen"];
+    "12" [style="filled", fillcolor="lightgreen", color="darkgreen"];
+    "8" [style="filled", fillcolor="lightgreen", color="darkgreen"];
+    "10" [style="filled", fillcolor="lightgreen", color="darkgreen"];
+    "12" [style="filled", fillcolor="lightblue", color="darkblue"];
+
+    1 -> 10
+    2 -> 6
+    3 -> 7
+    3 -> 8
+    4 -> 4
+    4 -> 7
+    5 -> 9[color="darkgreen"]
+    6 -> 9
+    7 -> 3
+    7 -> 7
+    8 -> 10[color="darkgreen"]
+    9 -> 12[color="darkgreen"]
+    12 -> 5[color="darkgreen"]
+    12 -> 8[color="darkgreen"]
+    13 -> 2
+    15 -> 6
+    15 -> 7
+}

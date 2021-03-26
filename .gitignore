@@ -1,0 +1,5 @@
+*.exe
+*.o
+.DS_Store
+*.xcodeproj
+.vscode
