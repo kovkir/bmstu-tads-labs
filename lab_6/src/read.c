@@ -199,7 +199,7 @@ int read_hash_table(hash_table_t *table, int *buf, int size_buf)
     table->array = calloc(table->size, sizeof(hash_elem_t));
 
     if (!table->array)
-        return MEMORY_ALIGNMENT_ERROR;
+        return FAILED_TO_ALLOCATE_MEMORY;
 
     for (int i = 0; i < size_buf; i++)
     {

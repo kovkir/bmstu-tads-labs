@@ -25,4 +25,6 @@ int **allocate_matrix(int n, int m)
             return NULL;
         }
     }
+
+    return data;
 }

@@ -145,7 +145,7 @@ int add_elem_to_stack_list(elem_stack_list_t **elem_stack_list, int numb_add_ele
         if (!new_elem)
         {
             printf("Не удалось выделить память\n");
-            return MEMORY_ALIGNMENT_ERROR;
+            return FAILED_TO_ALLOCATE_MEMORY;
         }
 
         r = read_new_elem(&new_elem->elem);
@@ -195,7 +195,7 @@ int fill_stack_list_randomly(elem_stack_list_t **elem_stack_list, int numb_add_e
         if (!new_elem)
         {
             printf("Не удалось выделить память\n");
-            return MEMORY_ALIGNMENT_ERROR;
+            return FAILED_TO_ALLOCATE_MEMORY;
         }
 
         new_elem->elem = MIN_BORDER + rand() % (MAX_BORDER - MIN_BORDER + 1);
@@ -238,7 +238,7 @@ int numb_remove_elem, elem_stack_list_t *elem_stack_list)
         {
             free(array->array);
             printf("Не удалось выделить память\n");
-            return MEMORY_ALIGNMENT_ERROR;
+            return FAILED_TO_ALLOCATE_MEMORY;
         }
 
         array->array = p;

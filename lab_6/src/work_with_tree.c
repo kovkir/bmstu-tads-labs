@@ -16,7 +16,7 @@ int create_vertex(vertex_t **vertex, int height)
     vertex_t *p = malloc(sizeof(vertex_t));
 
     if (!p)
-        return MEMORY_ALIGNMENT_ERROR;
+        return FAILED_TO_ALLOCATE_MEMORY;
 
     *vertex = p;
 

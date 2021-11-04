@@ -17,7 +17,7 @@ int add_item_to_table(hash_table_t *table, int number)
             p = realloc(table->array, (++table->size) * sizeof(hash_elem_t));
 
             if (!p)
-                return MEMORY_ALIGNMENT_ERROR;
+                return FAILED_TO_ALLOCATE_MEMORY;
 
             table->array = p;
             table->array[index].bool = '0';

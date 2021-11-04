@@ -18,7 +18,7 @@ int fill_turn_list_randomly(turn_list_t *list, int numb_add_elem)
         if (!new_elem)
         {
             printf("Не удалось выделить память\n");
-            return MEMORY_ALIGNMENT_ERROR;
+            return FAILED_TO_ALLOCATE_MEMORY;
         }
 
         new_elem->elem = MIN_BORDER + rand() % (MAX_BORDER - MIN_BORDER + 1);
@@ -65,7 +65,7 @@ int add_elem_to_turn_list(turn_list_t *list, int numb_add_elem, turn_array_t *ar
         if (!new_elem)
         {
             printf("Не удалось выделить память\n");
-            return MEMORY_ALIGNMENT_ERROR;
+            return FAILED_TO_ALLOCATE_MEMORY;
         }
 
         new_elem->elem = array->head[-list->size];
@@ -106,7 +106,7 @@ int numb_remove_elem, turn_list_t *list)
         {
             free(array->array);
             printf("Не удалось выделить память\n");
-            return MEMORY_ALIGNMENT_ERROR;
+            return FAILED_TO_ALLOCATE_MEMORY;
         }
 
         array->array = p;
